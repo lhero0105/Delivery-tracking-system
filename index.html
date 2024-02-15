@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="tracking">
+      <div class="tracking-wrap">
+        <h1 class="title">국내.외 택배 조회 시스템</h1>
+        <div class="theme">
+          <ul>
+            <li><a href="#">기본</a></li>
+            <li><a href="#">오랜지</a></li>
+            <li><a href="#">레드</a></li>
+            <li><a href="#">블루</a></li>
+          </ul>
+          <h3>현재 테마 :</h3>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-wrap">
+        <div class="select">
+          <div class="">
+            <span>국내/ 국외 선택</span>
+            <button class="btn">국내</button>
+            <button class="btn">국외</button>
+          </div>
+        </div>
+        <div class="select-code">
+          <select name="t_Code" id="t_Code"></select>
+        </div>
+        <div class="data-input">
+          <input
+            type="text"
+            placeholder="운송장 번호를 입력해주세요"
+            class="t_invoice"
+          />
+        </div>
+        <div class="submit">
+          <button class="submit-btn">조회하기</button>
+        </div>
+        <div class="desc">
+          <div class="top"></div>
+          <div class="center"></div>
+          <div class="bottom"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/index.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

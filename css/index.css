@@ -1,0 +1,122 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none;color: #000;}
+
+.tracking{
+    /* background-color: #6366F1; */
+    background: linear-gradient(45deg, Orange, rgb(255, 78, 78));
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+.tracking .tracking-wrap{
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tracking .title{
+    color: #eee;
+    font-size: 30px;
+    
+}
+.tracking .theme{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: #000;
+}
+.tracking .theme ul {
+    display: flex;
+    column-gap: 20px;
+}
+.main-wrap{
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.main .select{
+    font-weight: bold;
+}
+.main .select .btn{
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+    background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+    font-size: 15px;
+    cursor: pointer;
+}
+.main .select .btn:hover{
+    color: #f0094a;
+    background: transparent;
+    box-shadow:none;
+}
+.main .select .btn:before,
+.main .select .btn:after{
+    content:'';
+    position:absolute;
+    height:2px;
+    width:0;
+    background: #f0094a;
+    box-shadow:
+    -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+    
+    transform: translateX(-50px);
+}
+.main .select .btn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.main .select .btn:hover:before,
+.main .select .btn:hover:after{
+    width:130px;
+    transition:800ms ease all;
+}
+.main .select span{
+    color:  #f0094a;
+    margin-right: 260px;
+}
+.select-code{
+    margin: 30px 0;
+}
+.select-code select{
+    font-size: 15px;
+    padding: 5px;
+}
+.desc{
+    width: 100%;
+    height: auto;
+    background-color: #eee;
+    padding: 50px;
+}
+.desc .center .info-back{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.desc .center .info-back li{
+    flex-basis: 20%;
+    text-align: center;
+    font-size: 12px;
+}
+.desc .center .info-back li img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+.desc .center .info-back li span.active{
+    font-weight: bold;
+    color: #6366F1;
+}
